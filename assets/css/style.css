@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0; /* we put zero so the content will be flush left and right*/
+  margin: 0; /* we put zero so the content will be flush left and right*/
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* css/style.css and we tryning to find the /images/bg-desktop.svg */
+  background-color: hsl(257, 40%, 49%);
+}
+.container {
+  padding: 40px;
+}
+
+/* padding: top right bottom left 
+   "   ": top left&right bottom;
+  "   "   : top & bottom    left & right;
+  "   " : all sides
+  think of a ps4 direction keypad
+*/
+.logo {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.illustration {
+  width: 47%;
+}
+.main_text {
+  color: white;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.heading {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.paragraph {
+  width: 85%;
+  line-height: 1.6;
+}
+.social_icons {
+  color: white;
+  text-align: right;
+  padding-right: 100px;
+}
+.social_icons i {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    text-align: center;
+  }
+
+  .illustration {
+    width: 70%;
+    min-width: 250px;
+  }
+  .main_text {
+    width: 100%;
+  }
+  .heading {
+    width: 100%;
+  }
+  .paragraph {
+    width: 100%;
+  }
+}
